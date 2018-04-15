@@ -24,6 +24,17 @@ create_ezr_aliases(){
         done < <(tail -n +5 "ezr-aliases.sh")
     fi
 
+
+    if [ -f ~/.zshrc ]; then
+
+        # Fetch lines
+        while IFS='' read -r line || [[ -n "$line" ]]; do
+        echo "$line" >> ~/.zshrc
+
+        # Escape the lines
+        done < <(tail -n +5 "ezr-aliases.sh")
+    fi
+
     echo -e "Ezr aliases created successfully!! $(date)"
 
 }
@@ -57,4 +68,4 @@ truncate_ezr_bashrc(){
 # TODO: Add truncate option with docs
 # truncate_ezr_bashrc
 create_ezr_aliases
-create_ezr_functions
+#create_ezr_functions
