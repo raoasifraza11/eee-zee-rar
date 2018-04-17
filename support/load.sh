@@ -18,9 +18,8 @@ load_ezr(){
         echo "$line" >> ~/.bashrc
 
         # Escape the lines
-        done < <(tail -n +5 "$EZR/support/script.sh")
+        done < <(tail -n +4 "$EZR/support/script.sh")
     fi
-
 
     if [ -f ~/.zshrc ]; then
 
@@ -29,7 +28,7 @@ load_ezr(){
         echo "$line" >> ~/.zshrc
 
         # Escape the lines
-        done < <(tail -n +5 "$EZR/support/script.sh")
+        done < <(tail -n +4 "$EZR/support/script.sh")
     fi
 
     echo -e "EZR setup successfully!! $(date)"

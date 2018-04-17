@@ -4,5 +4,5 @@
 
 for file in $HOME/.eee-zee-rar/lib/*.sh
 do
-    config $file;
+    source $file;
 done
