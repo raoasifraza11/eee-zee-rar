@@ -39,6 +39,5 @@ truncate_ezr_bashrc(){
     echo -n '' > ~/.bashrc
 }
 
-
 init
 load_ezr
