@@ -75,9 +75,10 @@ main() {
     echo '.   °°°·.°·..·°¯°·._.· 𝔼ℤℝ ·._.·°¯°·.·° .·°°°  .'
     echo '.                                              .'
     echo '.................is now installed!..............'
-    echo "${YELLOW}"
-    echo 'Thank You'
     printf "${NORMAL}"
+    bash $HOME/.eee-zee-rar/support/load.sh
+    echo "${YELLOW}"
+    echo 'Thank you!'
     env zsh
 }
 
