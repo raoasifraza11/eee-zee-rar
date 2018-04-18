@@ -12,7 +12,7 @@ bash <(curl -s https://raw.githubusercontent.com/raoasifraza11/eee-zee-rar/maste
 ezr_uninstall
 ```
 
-## Uninstall
+## Upgrade
 
 ```bash
 ezr_upgrade
