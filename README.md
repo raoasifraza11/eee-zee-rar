@@ -8,7 +8,7 @@ OSX Package for aliases and functions which we need in daily routines. You can i
 -   [Uninstall](#uninstall)
 -   [Upgrade](#upgrade)
 -   [Default Aliases](#default-aliases)
--   [Todos](#todo's)
+-   [Todos](#todos)
 -   [Thanks](#thanks)
 
 ### Installation
@@ -60,7 +60,7 @@ headerc='curl -I --compress'
 
 ```
 
-### TODO's
+### Todos
 
 - [x] Prevent duplication script
 - [ ] Add support installation pip, pip3
