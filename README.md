@@ -16,6 +16,7 @@ bash <(curl -s https://raw.githubusercontent.com/raoasifraza11/eee-zee-rar/maste
 
 - [ ] Prevent duplication script
 - [ ] Add Support installation pip, pip3
+- [ ] Checking Updates
 
 
 
