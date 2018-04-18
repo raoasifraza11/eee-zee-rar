@@ -9,7 +9,13 @@ bash <(curl -s https://raw.githubusercontent.com/raoasifraza11/eee-zee-rar/maste
 ## Uninstall
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/raoasifraza11/eee-zee-rar/master/uninstall.sh)
+ezr_uninstall
+```
+
+## Uninstall
+
+```bash
+ezr_upgrade
 ```
 
 ## TODO
