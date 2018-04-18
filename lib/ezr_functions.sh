@@ -6,11 +6,6 @@ ezr(){
     echo "$(tput setaf 2)Hello, From EEE-ZEE-RAR?"
 }
 
-ezr_help(){
-    echo "$(tput setaf 2)Hello, How may I help you?"
-}
-
-
 ezr_upgrade(){
     bash $HOME/.eee-zee-rar/upgrade.sh
 }
