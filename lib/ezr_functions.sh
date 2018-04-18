@@ -3,5 +3,9 @@
 ## EZR' functionality added here
 
 ezr(){
-    echo "$(tput setaf 2)Hello, How may I help you?"
+    echo "$(tput setaf 2)Hello, From EEE-ZEE-RAR?"
+}
+
+ezr_uninstall(){
+    bash $HOME/.eee-zee-rar/uninstall.sh
 }
