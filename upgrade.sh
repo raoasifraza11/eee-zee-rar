@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
-# Author: Asif Raza #
-# Date: Sun Apr  8 20:09:55 PKT 2018 #
 
+## upgrade script goes here
 main() {
     # Use colors, but only if connected to a terminal, and that terminal
     # supports them.
@@ -33,11 +32,11 @@ main() {
     fi
 
 
-    if [ -d "$EZR" ]; then
-        printf "${YELLOW}You already have EEE' ZEE' RAR' installed.${NORMAL}\n"
-        printf "You'll need to remove $EZR if you want to re-install.\n"
-        exit
-    fi
+    #if [ -d "$EZR" ]; then
+    #    printf "${YELLOW}You already have EEE' ZEE' RAR' installed.${NORMAL}\n"
+    #    printf "You'll need to remove $EZR if you want to re-install.\n"
+    #    exit
+    #fi
 
     # Prevent the cloned repository from having insecure permissions. Failing to do
     # so causes compinit() calls to fail with "command not found: compdef" errors
@@ -46,7 +45,7 @@ main() {
     # precedence over umasks except for filesystems mounted with option "noacl".
     umask g-w,o-w
 
-    printf "${BLUE}Cloning EZR'...${NORMAL}\n"
+    printf "${BLUE}Upgrading EZR'...${NORMAL}\n"
     hash git >/dev/null 2>&1 || {
         echo "Error: git is not installed"
         exit 1
@@ -61,21 +60,25 @@ main() {
           exit 1
         fi
     fi
+
+    rm -rf $EZR
+
     env git clone --depth=1 https://github.com/raoasifraza11/eee-zee-rar.git $EZR || {
         printf "Error: git clone of eee-zee-rar repo failed\n"
         exit 1
     }
 
+
+
+
+    echo "${BLUE}Copying new files...${NORMAL}"
     printf "${GREEN}"
     echo '................................................'
     echo '.                                              .'
     echo '.   °°°·.°·..·°¯°·._.· 𝔼ℤℝ ·._.·°¯°·.·° .·°°°  .'
     echo '.                                              .'
-    echo '.................is now installed!..............'
+    echo '............Upgraded successfully!..............'
     printf "${NORMAL}"
-    bash $HOME/.eee-zee-rar/support/load.sh
-    echo "${YELLOW}"
-    echo 'Thank you!'
     env zsh
 }
 
