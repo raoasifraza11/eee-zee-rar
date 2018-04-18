@@ -8,7 +8,7 @@ OSX Package for aliases and functions which we need in daily routines. You can i
 -   [Uninstall](#uninstall)
 -   [Upgrade](#upgrade)
 -   [Default Aliases](#default-aliases)
--   [Todos](#todo)
+-   [Todos](#todo's)
 -   [Thanks](#thanks)
 
 ### Installation
