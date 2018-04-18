@@ -12,4 +12,10 @@ bash <(curl -s https://raw.githubusercontent.com/raoasifraza11/eee-zee-rar/maste
 bash <(curl -s https://raw.githubusercontent.com/raoasifraza11/eee-zee-rar/master/uninstall.sh)
 ```
 
+## TODO
+
+- [ ] Prevent duplication script
+
+
+
 Stay tuned!

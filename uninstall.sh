@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 setColors(){
+
     # Use colors, but only if connected to a terminal, and that terminal
     # supports them.
     if which tput >/dev/null 2>&1; then
@@ -26,12 +27,11 @@ setColors(){
     # which may fail on systems lacking tput or terminfo
     set -e
 
-
-
-
 }
 
 uninstall(){
+
+    ## Load the colors set
     setColors
 
     if [ ! -d $HOME/.eee-zee-rar ]; then
@@ -39,14 +39,11 @@ uninstall(){
         env zsh
     fi
 
+    ## Uninstall
     rm -rf $HOME/.eee-zee-rar
-
-    echo "${YELLOW}"
-    echo 'EZR Successfully Uninstalled!!'
-    echo "${BLUE}Hope see you again!.${NORMAL}"
+    echo "${YELLOW}EZR Successfully Uninstalled!!"
+    echo "${BLUE}Hope see you again!${NORMAL}"
     env zsh
-
-
 }
 
 
