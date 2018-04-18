@@ -2,8 +2,9 @@
 # Author: Asif Raza #
 # Date: Tue Apr 17 22:31:22 PKT 2018 #
 
-init(){
 
+
+init(){
 export EZR=$HOME/.eee-zee-rar
 
 }
