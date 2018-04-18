@@ -71,7 +71,10 @@ headerc='curl -I --compress'
 
 ### Thanks
 
-Credits & thanks goes here
+Inspiration, Thanks and credit!!!
+
+- [Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh) - A delightful community-drive framework for managing your zsh configuration.
+- [Cyberciti](https://www.cyberciti.biz/tips/bash-aliases-mac-centos-linux-unix.html) - 30 Handy Bash Shell Aliases For Linux / Unix.
 
 
 Stay tuned!
