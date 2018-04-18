@@ -10,6 +10,11 @@ ezr_help(){
     echo "$(tput setaf 2)Hello, How may I help you?"
 }
 
+
+ezr_upgrade(){
+    bash $HOME/.eee-zee-rar/upgrade.sh
+}
+
 ezr_uninstall(){
     bash $HOME/.eee-zee-rar/uninstall.sh
 }
