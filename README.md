@@ -1,5 +1,7 @@
 # EEE' ZEE' RAR
 
+OSX Package for aliases and functions which we need in daily routines. You can install it using below command.
+
 ## Installation
 
 ```bash
@@ -18,12 +20,44 @@ ezr_uninstall
 ezr_upgrade
 ```
 
+## Default Aliases
+
+There are some default aliases which are available for you after installation of `eee-zee-rar`.
+
+```bash
+
+## handy short cuts ##
+..='cd ..'
+l='ls -al'
+c='clear'
+l.='ls -d .*'
+h='history'
+vi=vim
+svi='sudo vi'
+
+
+## a quick way to get out of current directory ##
+..='cd ..'
+...='cd ../../../'
+....='cd ../../../../'
+.....='cd ../../../../'
+.4='cd ../../../../'
+.5='cd ../../../../..'
+
+
+## get web server headers ##
+header='curl -I'
+headerc='curl -I --compress'
+
+```
+
 ## TODO
 
 - [x] Prevent duplication script
-- [ ] Add Support installation pip, pip3
+- [ ] Add support installation pip, pip3
 - [ ] Checking Updates
-- [ ] Remove bashrc or zshrc content before uninstall
+- [x] Remove bashrc or zshrc content before uninstall
+- [ ] Prevent during upgarde user_custom commands
 
 
 
