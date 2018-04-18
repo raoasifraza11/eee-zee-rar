@@ -3,13 +3,10 @@
 # Date: Tue Apr 17 22:31:22 PKT 2018 #
 
 
+main(){
 
-init(){
-export EZR=$HOME/.eee-zee-rar
+    export EZR=$HOME/.eee-zee-rar
 
-}
-
-load_ezr(){
 
     # Check existence
     if [ -f ~/.bashrc ]; then
@@ -38,9 +35,4 @@ load_ezr(){
 
 }
 
-truncate_ezr_bashrc(){
-    echo -n '' > ~/.bashrc
-}
-
-init
-load_ezr
+main

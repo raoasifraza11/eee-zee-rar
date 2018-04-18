@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-setColors(){
+
+uninstall(){
 
     # Use colors, but only if connected to a terminal, and that terminal
     # supports them.
@@ -27,13 +28,6 @@ setColors(){
     # which may fail on systems lacking tput or terminfo
     set -e
 
-}
-
-uninstall(){
-
-    ## Load the colors set
-    setColors
-
     if [ ! -d $HOME/.eee-zee-rar ]; then
         echo "${YELLOW}You already have EEE' ZEE' RAR' uninstalled.${NORMAL}"
         env zsh
@@ -45,7 +39,5 @@ uninstall(){
     echo "${BLUE}Hope see you again!${NORMAL}"
     env zsh
 }
-
-
 
 uninstall
