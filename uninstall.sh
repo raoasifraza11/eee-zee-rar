@@ -42,9 +42,8 @@ uninstall(){
     rm -rf $HOME/.eee-zee-rar
 
     echo "${YELLOW}"
-    echo 'EZR successfully installed!'
-    echo "${NORMAL}"
-    echo 'Thanks for using EZR!!!'
+    echo 'EZR Successfully Uninstalled!!.${NORMAL}'
+    echo '${BLUE}Hope see you again!.${NORMAL}'
     env zsh
 
 
