@@ -14,22 +14,26 @@ load_ezr(){
     # Check existence
     if [ -f ~/.bashrc ]; then
 
-        # Fetch lines
-        while IFS='' read -r line || [[ -n "$line" ]]; do
-        echo "$line" >> ~/.bashrc
+        if ! grep -Rq ".eee-zee-rar" ~/.bashrc; then
+            # Fetch lines
+            while IFS='' read -r line || [[ -n "$line" ]]; do
+            echo "$line" >> ~/.bashrc
 
-        # Escape the lines
-        done < <(tail -n +4 "$EZR/support/script.sh")
+            # Escape the lines
+            done < <(tail -n +4 "$EZR/support/script.sh")
+        fi
     fi
 
     if [ -f ~/.zshrc ]; then
 
-        # Fetch lines
-        while IFS='' read -r line || [[ -n "$line" ]]; do
-        echo "$line" >> ~/.zshrc
+        if ! grep -Rq ".eee-zee-rar" ~/.zshrc; then
+            # Fetch lines
+            while IFS='' read -r line || [[ -n "$line" ]]; do
+            echo "$line" >> ~/.zshrc
 
-        # Escape the lines
-        done < <(tail -n +4 "$EZR/support/script.sh")
+            # Escape the lines
+            done < <(tail -n +4 "$EZR/support/script.sh")
+        fi
     fi
 
     echo -e "EZR setup successfully!! $(date)"
