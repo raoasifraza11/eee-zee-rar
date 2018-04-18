@@ -13,7 +13,6 @@ load_ezr(){
 
     # Check existence
     if [ -f ~/.bashrc ]; then
-
         if ! grep -Rq ".eee-zee-rar" ~/.bashrc; then
             # Fetch lines
             while IFS='' read -r line || [[ -n "$line" ]]; do
@@ -25,7 +24,6 @@ load_ezr(){
     fi
 
     if [ -f ~/.zshrc ]; then
-
         if ! grep -Rq ".eee-zee-rar" ~/.zshrc; then
             # Fetch lines
             while IFS='' read -r line || [[ -n "$line" ]]; do
