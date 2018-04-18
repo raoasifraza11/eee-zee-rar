@@ -2,25 +2,34 @@
 
 OSX Package for aliases and functions which we need in daily routines. You can install it using below command.
 
-## Installation
+## Table of Content
+
+-   [Installation](#installation)
+-   [Uninstall](#uninstall)
+-   [Upgrade](#upgrade)
+-   [Default Aliases](#default-aliases)
+-   [Todos](#todo)
+-   [Thanks](#thanks)
+
+### Installation
 
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/raoasifraza11/eee-zee-rar/master/eee-zee-rar.sh)
 ```
 
-## Uninstall
+### Uninstall
 
 ```bash
 ezr_uninstall
 ```
 
-## Upgrade
+### Upgrade
 
 ```bash
 ezr_upgrade
 ```
 
-## Default Aliases
+### Default Aliases
 
 There are some default aliases which are available for you after installation of `eee-zee-rar`.
 
@@ -51,7 +60,7 @@ headerc='curl -I --compress'
 
 ```
 
-## TODO
+### TODO's
 
 - [x] Prevent duplication script
 - [ ] Add support installation pip, pip3
@@ -60,6 +69,9 @@ headerc='curl -I --compress'
 - [ ] Prevent during upgarde user_custom commands
 
 
+### Thanks
+
+Credits & thanks goes here
 
 
 Stay tuned!
