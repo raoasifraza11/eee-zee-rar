@@ -62,15 +62,12 @@ main() {
         fi
     fi
 
-    rm -rf $EZR
+    echo "${BLUE}Copying new files...${NORMAL}"
 
-    env git clone --depth=1 https://github.com/raoasifraza11/eee-zee-rar.git $EZR || {
-        printf "Error: git clone of eee-zee-rar repo failed\n"
+    ($EZR/ && git pull origin master) || {
+        printf "$(tput setaf 1)Error: Upgrading failed\n $(tput setaf 0)"
         exit 1
     }
-
-
-    echo "${BLUE}Copying new files...${NORMAL}"
     printf "${GREEN}"
     echo '................................................'
     echo '.                                              .'
