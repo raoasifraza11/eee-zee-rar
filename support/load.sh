@@ -7,7 +7,6 @@ ezr_activate(){
 
     export EZR=$HOME/.eee-zee-rar
 
-
     # Check existence
     if [ -f ~/.bashrc ]; then
         if ! grep -Rq ".eee-zee-rar" ~/.bashrc; then
@@ -34,5 +33,3 @@ ezr_activate(){
     echo -e "EZR setup successfully!! $(date)"
 
 }
-
-ezr_activate

@@ -8,6 +8,7 @@ main() {
     if which tput >/dev/null 2>&1; then
       ncolors=$(tput colors)
     fi
+
     if [ -t 1 ] && [ -n "$ncolors" ] && [ "$ncolors" -ge 8 ]; then
         RED="$(tput setaf 1)"
         GREEN="$(tput setaf 2)"
@@ -63,7 +64,6 @@ main() {
     fi
 
     echo "${BLUE}fetching updates...${NORMAL}"
-
 
     upgrade=$(cd $EZR && git pull origin master  2>&1 | grep "Already up to date.") || {
         printf "$(tput setaf 1)Error: Upgrading failed\n $(tput setaf 0)"
