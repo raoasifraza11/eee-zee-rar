@@ -65,10 +65,7 @@ main() {
 
     echo "${BLUE}fetching updates...${NORMAL}"
 
-    upgrade=$(cd $EZR && git pull origin master  2>&1 | grep "Already up to date.") || {
-        printf "$(tput setaf 1)Error: Upgrading failed\n $(tput setaf 0)"
-        exit 1
-    }
+    upgrade=$(cd $EZR && git pull origin master  2>&1 | grep "Already up to date.")
 
     if [ "$upgrade" = "Already up to date." ]; then
         printf "${GREEN}"
