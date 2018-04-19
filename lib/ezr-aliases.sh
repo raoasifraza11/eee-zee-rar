@@ -27,7 +27,7 @@ alias .4='cd ../../../../'
 alias .5='cd ../../../../..'
 
 
-# get web server headers #
+## get web server headers ##
 alias header='curl -I'
 alias headerc='curl -I --compress'
 
