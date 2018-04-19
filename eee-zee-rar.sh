@@ -66,7 +66,7 @@ main() {
         exit 1
     }
 
-    bash $HOME/.eee-zee-rar/support/load.sh
+    bash $EZR/support/script.sh.sh
     printf "${GREEN}"
     echo '................................................'
     echo '.                                              .'

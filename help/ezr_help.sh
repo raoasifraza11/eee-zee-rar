@@ -16,4 +16,3 @@ ezr_uninstall(){
     bash $HOME/.eee-zee-rar/uninstall.sh
 }
 
-ezr

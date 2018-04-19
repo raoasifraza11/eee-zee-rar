@@ -14,6 +14,13 @@ OSX Package for aliases and functions which we need in daily routines. You can i
 
 ### Installation
 
+Dependencies for this tool are:
+
+- Git
+- cURL
+
+You can install the tool using command:
+
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/raoasifraza11/eee-zee-rar/master/eee-zee-rar.sh)
 ```

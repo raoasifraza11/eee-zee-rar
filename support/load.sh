@@ -3,7 +3,7 @@
 # Date: Tue Apr 17 22:31:22 PKT 2018 #
 
 
-main(){
+ezr_activate(){
 
     export EZR=$HOME/.eee-zee-rar
 
@@ -35,4 +35,4 @@ main(){
 
 }
 
-main
+ezr_activate
