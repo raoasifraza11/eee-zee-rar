@@ -66,6 +66,7 @@ main() {
         exit 1
     }
 
+    bash $HOME/.eee-zee-rar/support/load.sh
     printf "${GREEN}"
     echo '................................................'
     echo '.                                              .'
@@ -73,7 +74,6 @@ main() {
     echo '.                                              .'
     echo '.................is now installed!..............'
     printf "${NORMAL}"
-    bash $HOME/.eee-zee-rar/support/load.sh
     echo "${YELLOW}"
     echo 'Thank you!'
     env zsh

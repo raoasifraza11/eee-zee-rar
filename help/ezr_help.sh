@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+## Help docs goes here
+
 ## EZR' functionality added here
 
 ezr(){
@@ -13,3 +15,5 @@ ezr_upgrade(){
 ezr_uninstall(){
     bash $HOME/.eee-zee-rar/uninstall.sh
 }
+
+ezr

@@ -2,6 +2,7 @@
 
 ## upgrade script goes here
 main() {
+
     # Use colors, but only if connected to a terminal, and that terminal
     # supports them.
     if which tput >/dev/null 2>&1; then
@@ -69,8 +70,6 @@ main() {
     }
 
 
-
-
     echo "${BLUE}Copying new files...${NORMAL}"
     printf "${GREEN}"
     echo '................................................'
@@ -80,6 +79,7 @@ main() {
     echo '............Upgraded successfully!..............'
     printf "${NORMAL}"
     env zsh
+
 }
 
 main
