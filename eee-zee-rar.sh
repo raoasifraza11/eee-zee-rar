@@ -66,7 +66,7 @@ main() {
         exit 1
     }
 
-    bash $EZR/support/script.sh.sh
+    bash $EZR/support/script.sh
     printf "${GREEN}"
     echo '................................................'
     echo '.                                              .'

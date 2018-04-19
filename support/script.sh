@@ -6,7 +6,6 @@ if [ -d ~/.eee-zee-rar ]; then
     for file in $HOME/.eee-zee-rar/lib/*.sh
     do
         source $file;
-        echo $file
     done
 fi
 
@@ -14,6 +13,5 @@ if [ -d ~/.eee-zee-rar ]; then
     for file in $HOME/.eee-zee-rar/help/*.sh
     do
         source $file;
-        echo $file
     done
 fi
