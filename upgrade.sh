@@ -64,7 +64,7 @@ main() {
 
     echo "${BLUE}Copying new files...${NORMAL}"
 
-    ($EZR/ && git pull origin master) || {
+    (cd $EZR && git pull origin master) || {
         printf "$(tput setaf 1)Error: Upgrading failed\n $(tput setaf 0)"
         exit 1
     }
