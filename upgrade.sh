@@ -64,18 +64,26 @@ main() {
 
     echo "${BLUE}Copying new files...${NORMAL}"
 
-    (cd $EZR && git pull origin master) || {
+
+    upgrade=$(cd $EZR && git pull origin master  2>&1 | grep "Already up to date") || {
         printf "$(tput setaf 1)Error: Upgrading failed\n $(tput setaf 0)"
         exit 1
     }
-    printf "${GREEN}"
-    echo '................................................'
-    echo '.                                              .'
-    echo '.   °°°·.°·..·°¯°·._.· 𝔼ℤℝ ·._.·°¯°·.·° .·°°°  .'
-    echo '.                                              .'
-    echo '............Upgraded successfully!..............'
-    printf "${NORMAL}"
-    env zsh
+
+    if [ "$upgrade" = "Already up to date" ]; then
+        printf "${GREEN}"
+        echo '............Already up to date!..............'
+        printf "${NORMAL}"
+    else
+        printf "${GREEN}"
+        echo '................................................'
+        echo '.                                              .'
+        echo '.   °°°·.°·..·°¯°·._.· 𝔼ℤℝ ·._.·°¯°·.·° .·°°°  .'
+        echo '.                                              .'
+        echo '............Upgraded successfully!..............'
+        printf "${NORMAL}"
+        env zsh
+    fi
 
 }
 

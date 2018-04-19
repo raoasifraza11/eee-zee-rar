@@ -61,6 +61,7 @@ main() {
           exit 1
         fi
     fi
+
     env git clone --depth=1 https://github.com/raoasifraza11/eee-zee-rar.git $EZR || {
         printf "Error: git clone of eee-zee-rar repo failed\n"
         exit 1
