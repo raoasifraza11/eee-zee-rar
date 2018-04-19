@@ -87,8 +87,9 @@ headerc='curl -I --compress'
 - [ ] Add support installation pip, pip3
 - [x] Checking Updates
 - [x] Remove bashrc or zshrc content before uninstall
-- [ ] Prevent during upgarde user_custom commands
 - [ ] Currently Shell not supported
+- [ ] Plugin support feature
+- [ ] Custom commands feature
 
 
 ### Thanks
