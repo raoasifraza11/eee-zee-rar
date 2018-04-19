@@ -7,6 +7,7 @@ OSX Package for aliases and functions which we need in daily routines. You can i
 -   [Installation](#installation)
 -   [Uninstall](#uninstall)
 -   [Upgrade](#upgrade)
+-   [Anatomy](#anatomy)
 -   [Default Aliases](#default-aliases)
 -   [Todos](#todos)
 -   [Thanks](#thanks)
@@ -27,6 +28,19 @@ ezr_uninstall
 
 ```bash
 ezr_upgrade
+```
+
+### Anatomy
+
+```bash
+
+├── Lib
+├── support
+├── eee-zee-rar.sh
+├── uninstall.sh
+├── upgrade.sh
+└── .gitignore
+
 ```
 
 ### Default Aliases
