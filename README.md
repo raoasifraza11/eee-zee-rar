@@ -85,9 +85,10 @@ headerc='curl -I --compress'
 
 - [x] Prevent duplication script
 - [ ] Add support installation pip, pip3
-- [ ] Checking Updates
+- [x] Checking Updates
 - [x] Remove bashrc or zshrc content before uninstall
 - [ ] Prevent during upgarde user_custom commands
+- [ ] Currently Shell not supported
 
 
 ### Thanks
