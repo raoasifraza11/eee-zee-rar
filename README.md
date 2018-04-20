@@ -22,7 +22,7 @@ Dependencies for this tool are:
 You can install the tool using command:
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/raoasifraza11/eee-zee-rar/master/eee-zee-rar.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/raoasifraza11/eee-zee-rar/master/eee-zee-rar.sh)
 ```
 
 ### Uninstall
